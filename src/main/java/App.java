@@ -11,10 +11,10 @@ public class App {
         System.out.println(bean.getMessage());
         HelloWorld bean1 = (HelloWorld) applicationContext.getBean("helloworld");
 
-        Cat cat1 = (Cat) applicationContext.getBean(Cat.class);
-        Cat cat2 = (Cat) applicationContext.getBean(Cat.class);
+        Cat beancat1 = (Cat) applicationContext.getBean(Cat.class);
+        Cat beancat2 = (Cat) applicationContext.getBean(Cat.class);
         System.out.println(String.valueOf(bean.equals(bean1)));
-        System.out.println(String.valueOf(cat1.equals(cat2)));
+        System.out.println(String.valueOf(beancat1.equals(beancat2)));
 
     }
 }
