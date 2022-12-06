@@ -13,8 +13,8 @@ public class App {
 
         Cat beancat1 = (Cat) applicationContext.getBean(Cat.class);
         Cat beancat2 = (Cat) applicationContext.getBean(Cat.class);
-        System.out.println(String.valueOf(bean.equals(bean1)));
-        System.out.println(String.valueOf(beancat1.equals(beancat2)));
+        System.out.println(bean==bean1);
+        System.out.println(beancat1==beancat2);
 
     }
 }
